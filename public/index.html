@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+<style scoped>
+   
+ .theme--light.v-label {
+  color: white !important;
+  font-size:13.2px !important;
+}
+.theme--light.v-label--is-disabled {
+  color: white !important;
+
+}
+
+.theme--dark.v-label {
+  color:  white !important;
+  font-size:10px !important;
+}
+.theme--dark.v-label--is-disabled {
+  color: white !important;
+}
+
+.v-label {
+  font-size: 16px;
+  line-height: 1;
+  min-height: 8px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.theme--light.v-text-field > .v-input__control > .v-input__slot:before{
+  border-color:rgba(255,255,255,0.2);
+}
+</style>
