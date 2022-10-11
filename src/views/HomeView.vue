@@ -351,7 +351,7 @@ color="dark"
     </v-btn>
   </v-form>
             </v-col>
-            <v-col>
+            <v-col cols="6">
 <div class="enlaces">
 <div> 
   <div class="text-white text-center subtitle">
@@ -362,7 +362,7 @@ color="dark"
       color="transparent"
       
     >
-      Inicio
+      Inicios532
     
     </v-btn>
     <v-btn
