@@ -399,24 +399,24 @@ color="dark"
  <v-col class="text-white">
   <div class="subtitle footer-col-3">¿Por qué elegir Azuri Producciones?</div>
 <v-row class="mt-6">
-  <v-col class="text-center d-flex  align-center">
+  <v-col class="text-center d-flex  align-center" col="4">
     <i class="fa-solid fa-star mr-3"></i><div> Flexibilidad de servicio</div>
   </v-col>
-  <v-col class="text-center d-flex align-center">
+  <v-col class="text-center d-flex align-center" col="4">
     <i class="fa-solid fa-star mr-3"></i><div>Entrega a tiempo</div>
   </v-col>
-  <v-col class="text-center d-flex align-center">
+  <v-col class="text-center d-flex align-center" col="4">
  <i class="fa-solid fa-star mr-3"></i><div>Cobertura Nacional</div>
   </v-col>
 </v-row>
 <v-row>
-  <v-col class="text-center d-flex align-center">
+  <v-col class="text-center d-flex align-center" col="4">
  <i class="fa-solid fa-star mr-3"></i><div> Unidades modernas</div>
   </v-col>
-  <v-col class="text-center d-flex align-center">
+  <v-col class="text-center d-flex align-center" col="4">
  <i class="fa-solid fa-star mr-3"></i><div>Calidad de servicio</div>
   </v-col>
-  <v-col class="text-center d-flex align-center">
+  <v-col class="text-center d-flex align-center" col="4">
  <i class="fa-solid fa-star mr-3"></i><div> Servicio 24/7
 </div>
   </v-col>
