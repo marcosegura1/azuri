@@ -362,7 +362,7 @@ color="dark"
       color="transparent"
       
     >
-      Inicios532
+      Inicio
     
     </v-btn>
     <v-btn
@@ -396,7 +396,7 @@ color="dark"
   </div>
 
 </v-col>
- <v-col class="text-white" cols="12">
+ <v-col class="text-white text-center sub346" cols="12">
   <div class="subtitle footer-col-3">¿Por qué elegir Azuri Producciones?</div>
 <v-row class="mt-6">
   <v-col class="text-center d-flex  align-center" cols="4">
@@ -713,5 +713,8 @@ video {
 }
 .fondo{
   margin-top:-1px;
+}
+.sub346{
+  line-height: 20px;
 }
 </style>
