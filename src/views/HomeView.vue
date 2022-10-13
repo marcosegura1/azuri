@@ -5,11 +5,12 @@
  <div class="titulo">
 
 <div>Azuri Producciones</div>
+<div class="sub-title">Todo para tu evento en un solo lugar</div>
 <v-btn
           class="boton btn-custom"
           @click="messages++"
         >
-          Contactar
+          Saber más
         </v-btn>
       </div>  
   </div>
@@ -17,7 +18,7 @@
 
 <div ></div>
 
-<div class="fondo">
+<div class="fondo about">
   <v-container class="delimitar">
 <v-row>
 <v-col class="imagen imagesize second-order">
@@ -36,7 +37,7 @@ color="dark"
 <v-col>
 
 
-<div class="container-badge">
+<div class="container-badge ">
   <v-chip class="badge mb-4"
   close
   color="white"
@@ -55,234 +56,179 @@ color="dark"
 </div>
 
 
+<div class="fondo servicios">
+  <v-container class="delimitar">
+<div class="subtitulo font-weight-black display-2 text-center mb-10">Servicios</div>
 
-<div class="fondo ">
-<v-container class="delimitar">
-<v-row>
-<v-col class="columna1">
-  <div class="container-badge-start">
-  <v-chip class="badge mb-4" 
-  close
-  color="white"
-  link
-  outlined
->Destacado</v-chip>
-</div>
-<div class="subtitulo font-weight-black display-2 text-left">Fiestas
-<span class="text-right"> Temáticas</span></div>
-<div class="w-100 content-3">
-<div class="division3 mb-6 mt-5"></div></div>
-<div class="text-justify d-block descripcion">Organizamos tus eventos de una manera espectacular e inolvidable. Contamos con varias propuestas de acuerdo a tus necesidades y presupuesto para así crear el evento de tus sueños, somos reconocidos por brindar eventos de calidad y económicos, le aseguramos diversión y calidad en su evento. 
-<br> 
-Azuri Producciones organiza bautizos, cumpleaños, baby shower, despedidas, matrimonios, entre muchos otros eventos. 
-</div>
-</v-col>
-<v-col class="imagen imagesize" >
-<v-img shaped class="rounded-lg imagen-o"
-lazy-src="../assets/home/image2.jpg"
-src="../assets/home/image2.jpg"
->  <v-btn right
-          color="dark"
-          white
-          v-bind="attrs"
-          v-on="on"
-        >
-        Ver más
-        </v-btn></v-img>
-</v-col>
-</v-row>
-</v-container>
-</div>
-
-
-<div class="fondo margin-b-0">
-<v-container class="delimitar">
-<v-row>
-<v-col class="imagen imagesize second-order">
-<v-img shaped class="rounded-lg imagen-o"
-lazy-src="../assets/home/image3.jpg"
-src="../assets/home/image3.jpg"
->  <v-btn
-color="dark"
-          white
-          v-bind="attrs"
-          v-on="on"
-        >
-        Ver más
-        </v-btn></v-img>
-</v-col>
-<v-col >
-  <div class="container-badge">
-  <v-chip class="badge mb-4"
-  close
-  color="white"
-  link
-  outlined
->Destacado</v-chip>
-</div>
-<div class="subtitulo font-weight-black display-2 text-right">Quinceañeros</div>
-<div class="w-100 content-2">
-<div class="division2 mb-6 mt-5"></div></div>
-<div class="text-justify d-block descripcion">Los quince años es una edad importante para todas las mujeres, un quinceañero es una celebración para presentar a la quinceañera ante la sociedad, y demostrar que ha alcanzado madurez, Azuri Producciones se encarga de convertir tus quince en un evento único, daremos nuestro mejor esfuerzo para cumplir con sus expectativas.
-<div>
-
-  </div>
-</div>
-</v-col>
-</v-row>
-<div class="text-center margin-t">
-<v-btn
-          class="boton btn-custom"
-          @click="messages++"
-        >
-          Ver más
-        </v-btn>
-      </div>
-</v-container>
-</div>
-
-<div class="fondo paral">
-  <v-parallax
-    dark
-    src="../assets/home/parallax.jpg"
-   class="paral-o">
-      
-<v-container  class="delimitar">
 <v-row >
-        <v-col>
-        <div class="text-h4 font-weight-thin mb-4">
-          <v-card
-    class="mx-auto"
-    max-width="350"
-  >
-    <v-img
-      class="white--text align-end"
-      height="200px"
-      src="../assets/home/parallax.jpg"
-    >
-      <v-card-title>Top 10 Australian beaches</v-card-title>
-    </v-img>
 
-    <v-card-subtitle class="pb-0">
-      Number 10
-    </v-card-subtitle>
+  <v-col>
 
-    <v-card-text class="text--primary mt-5">
-      <div>Whitehaven Beach</div>
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img 
+  src="../assets/home/fiestas.jpg"
+  height="200px"
+></v-img>
 
-      <div>Whitsunday Island, Whitsunday Islands</div>
-    </v-card-text>
+<v-card-title>
+  Fiestas Temáticas
+</v-card-title>
 
-    <v-card-actions>
-      <v-btn
-        color="orange"
-        text
-      >
-        Share
-      </v-btn>
+<v-card-subtitle class="text-justify pt-2">
+  Organizamos tus eventos de una manera espectacular e inolvidable. Contamos con varias propuestas de acuerdo a tus necesidades y presupuesto para así crear el evento de tus sueños, somos reconocidos por brindar eventos de calidad y económicos, le aseguramos diversión y calidad en su evento. <br>Azuri Producciones organiza bautizos, cumpleaños, baby shower, despedidas, matrimonios, entre muchos otros eventos. 
+</v-card-subtitle>
+</v-card>
+</v-col>
 
-      <v-btn
-        color="orange"
-        text
-      >
-        Explore
-      </v-btn>
-    </v-card-actions>
-  </v-card>
-</div></v-col>
+
+
+
 <v-col>
-        <div class="text-h4 font-weight-thin mb-4">
-          <v-card
-    class="mx-auto"
-    max-width="350"
-  >
-    <v-img
-      class="white--text align-end"
-      height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-    >
-      <v-card-title>Top 10 Australian beaches</v-card-title>
-    </v-img>
 
-    <v-card-subtitle class="pb-0 ">
-      Number 10
-    </v-card-subtitle>
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+  src="../assets/home/quinceañeros.jpg"
+  height="200px"
+></v-img>
 
-    <v-card-text class="text--primary mt-5">
-      <div>Whitehaven Beach</div>
+<v-card-title>
+  Quinceañeros
+</v-card-title>
 
-      <div>Whitsunday Island, Whitsunday Islands</div>
-    </v-card-text>
+<v-card-subtitle>
+  Los quince años es una edad importante para todas las mujeres, un quinceañero es una celebración para presentar a la quinceañera ante la sociedad, y demostrar que ha alcanzado madurez, Azuri Producciones se encarga de convertir tus quince en un evento único, daremos nuestro mejor esfuerzo para cumplir con sus expectativas.
+</v-card-subtitle>
 
-    <v-card-actions>
-      <v-btn
-        color="orange"
-        text
-      >
-        Share
-      </v-btn>
 
-      <v-btn
-        color="orange"
-        text
-      >
-        Explore
-      </v-btn>
-    </v-card-actions>
-  </v-card>
-</div></v-col>
+
+</v-card>
+</v-col>
+
+
 <v-col>
-        <div class="text-h4 font-weight-thin mb-4">
-          <v-card
-    class="mx-auto"
-    max-width="350"
-  >
-    <v-img
-      class="white--text align-end"
-      height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-    >
-      <v-card-title>Top 10 Australian beaches</v-card-title>
-    </v-img>
 
-    <v-card-subtitle class="pb-0">
-      Number 10
-    </v-card-subtitle>
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+  src="../assets/home/cumpleaños.jpg"
+  height="200px"
+></v-img>
 
-    <v-card-text class="text--primary mt-5">
-      <div>Whitehaven Beach</div>
+<v-card-title>
+  Cumpleaños
+</v-card-title>
 
-      <div>Whitsunday Island, Whitsunday Islands</div>
-    </v-card-text>
+<v-card-subtitle>
+  ¿Próximo a cumplir años y deseas celebrarlo a lo grande? Tranqui, no te preocupes Azuri Producciones gracias a su larga trayectoria en el rubro de organización de eventos se encarga de volver tu cumpleaños en uno muy especial, sabemos que los cumpleaños es una celebración muy importante, es por eso que damos un servicio A1 para lograr un cumpleaños soñado.
+</v-card-subtitle>
 
-    <v-card-actions>
-      <v-btn
-        color="orange"
-        text
-      >
-        Share
-      </v-btn>
 
-      <v-btn
-        color="orange"
-        text
-      >
-        Explore
-      </v-btn>
-    </v-card-actions>
-  </v-card>
-</div></v-col>
+
+</v-card>
+</v-col>
+
 </v-row>
+<v-row class="mt-9">
+
+<v-col >
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/fiestas-juveniles.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Fiestas Juveniles
+</v-card-title>
+
+<v-card-subtitle>
+  Azuri Producciones es experto en fiestas juveniles, siendo esta el área donde con más experiencia contamos. Realizamos todo tipo de fiestas juveniles.
+
+Realizamos Quince años, 18 años, Cumpleaños, Fiestas Temáticas, Fiestas de Promoción entre otros:
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
+
+
+
+<v-col>
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/eventos-privados.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Evento Privado
+
+</v-card-title>
+
+<v-card-subtitle>
+  ¿No encuentras una descripción que encaje con el tipo de evento que buscas celebrar? No te preocupes, gracias a nuestra gran variedad y cantidad de proveedores podemos hacer el evento que deseas una realidad, no dudes en contactarnos!
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
+<v-col>
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/eventos-privados.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Evento Privado
+
+</v-card-title>
+
+<v-card-subtitle>
+  ¿No encuentras una descripción que encaje con el tipo de evento que buscas celebrar? No te preocupes, gracias a nuestra gran variedad y cantidad de proveedores podemos hacer el evento que deseas una realidad, no dudes en contactarnos!
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
+
+
+</v-row>
+
 </v-container>
-
-
-  </v-parallax>
 </div>
+
  
 <v-btn
         fab
         dark
-        small
+        mdall
         class="whatsapp"
       >
       <i class="fa-brands fa-whatsapp"></i>
@@ -335,7 +281,7 @@ color="dark"
     <v-text-field
       v-model="email"
       :rules="emailRules"
-      label="E-mail"
+      label="Message"
       required  
       color="white"
       class="custom-label-color"
@@ -351,76 +297,15 @@ color="dark"
     </v-btn>
   </v-form>
             </v-col>
-            <v-col cols="6">
-<div class="enlaces">
-<div> 
-  <div class="text-white text-center subtitle">
-            Enlaces</div>
-              
-  <v-btn
-      class="ma-2 width-equal text-white mt-8"
-      color="transparent"
-      
-    >
-      Inicio
-    
-    </v-btn>
-    <v-btn
-      class="ma-2 width-equal text-white"
-      color="transparent"
-    >
-      Nosotros
-    
-    </v-btn>
-    <v-btn
-      class="ma-2 width-equal text-white"
-      color="transparent"
-    >
-      Servicios
-    
-    </v-btn>
-    <v-btn
-      class="ma-2 width-equal text-white"
-      color="transparent"
-    >
-      Galeria
-    
-    </v-btn> <v-btn
-      class="ma-2 width-equal text-white"
-      color="transparent"
-    >
-      Contacto
-    
-    </v-btn>
-  </div>
-  </div>
+           
+ <v-col cols="6" class="text-white text-center sub346" >
+  <v-img class="rounded-lg imagen-footer" gradient="rgba(0,0,0,.33), rgba(0,0,0,.7)"
+  src="../assets/home/image4.jpg"
+  height="300px"
+> <div class="size-font-footer text-white">Somos los mejores en lo que hacemos</div></v-img>
 
-</v-col>
- <v-col class="text-white text-center sub346" cols="12">
-  <div class="subtitle footer-col-3">¿Por qué elegir Azuri Producciones?</div>
-<v-row class="mt-6">
-  <v-col class="text-center d-flex  align-center" cols="4">
-    <i class="fa-solid fa-star mr-3"></i><div> Flexibilidad de servicio</div>
-  </v-col>
-  <v-col class="text-center d-flex align-center" cols="4">
-    <i class="fa-solid fa-star mr-3"></i><div>Entrega a tiempo</div>
-  </v-col>
-  <v-col class="text-center d-flex align-center" cols="4">
- <i class="fa-solid fa-star mr-3"></i><div>Cobertura Nacional</div>
-  </v-col>
-</v-row>
-<v-row>
-  <v-col class="text-center d-flex align-center" cols="4">
- <i class="fa-solid fa-star mr-3"></i><div> Unidades modernas</div>
-  </v-col>
-  <v-col class="text-center d-flex align-center" cols="4">
- <i class="fa-solid fa-star mr-3"></i><div>Calidad de servicio</div>
-  </v-col>
-  <v-col class="text-center d-flex align-center" cols="4">
- <i class="fa-solid fa-star mr-3"></i><div> Servicio 24/7
-</div>
-  </v-col>
-</v-row>
+ 
+
             </v-col>
           </v-row>
          </v-container>
@@ -442,30 +327,7 @@ color="dark"
 
 <div class="botones">
   <div>
-<v-btn
-      class="ma-2"
-      outlined
-      color="white"
-    >
-      Nosotros
-    </v-btn></div>
-
-    <div class="mt-1">
-<v-btn
-      class="ma-2"
-      outlined
-      color="white"
-    >
-      Servicios
-    </v-btn></div>
-    <div class="mt-1">
-<v-btn
-      class="ma-2"
-      outlined
-      color="white"
-    >
-     Contacto
-    </v-btn></div>
+</div>
 </div>
 
 
@@ -641,9 +503,7 @@ width: 100%;
   display: flex;
   justify-content: flex-start;
 }
-.paral{
-  padding-bottom:0px;
-}
+
 .socials{
   transform: rotate(90deg);
   position: fixed;
@@ -700,7 +560,7 @@ video {
   background-color:rgba(255,255,255, 0.15) !important;
 }
 .imagen-o{
-  height:330px;
+  height:280px;
 }
 .btn-custom{
   padding-left:60px !important;
@@ -715,6 +575,42 @@ video {
   margin-top:-1px;
 }
 .sub346{
-  line-height: 20px;
+  line-height: 25px !important;
+}
+.sub-title{
+  font-size:18px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.font-size{
+  font-size:40px;
+  padding-bottom:40px;
+  padding-top:90px;
+}
+.paral-o{
+  height: 1100px !important;
+}
+
+.paral{
+  height: 1100px !important;
+}
+@media (min-width: 576px) { 
+.v-application .mx-auto{
+  margin-right:0px !important;
+  margin-left:0px !important;
+}
+}
+.servicios{
+  padding-bottom:40px;
+}
+.imagen-footer{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.size-font-footer{
+  font-size:28px;
+  font-weight: 500;
 }
 </style>
