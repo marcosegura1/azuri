@@ -25,14 +25,7 @@
 <v-img shaped class="rounded-lg imagen-o"
 lazy-src="../assets/home/image1.jpg"
 src="../assets/home/image1.jpg"
-><v-btn
-color="dark"
-          white
-          v-bind="attrs"
-          v-on="on"
-        >
-          Ver más
-        </v-btn></v-img>
+></v-img>
 </v-col>
 <v-col>
 
@@ -56,7 +49,7 @@ color="dark"
 </div>
 
 
-<div class="fondo servicios">
+<div class="fondo servicios" id="servicios">
   <v-container class="delimitar">
 <div class="subtitulo font-weight-black display-2 text-center mb-10">Servicios</div>
 
@@ -77,8 +70,14 @@ max-width="344"
   Fiestas Temáticas
 </v-card-title>
 
-<v-card-subtitle class="text-justify pt-2">
-  Organizamos tus eventos de una manera espectacular e inolvidable. Contamos con varias propuestas de acuerdo a tus necesidades y presupuesto para así crear el evento de tus sueños, somos reconocidos por brindar eventos de calidad y económicos, le aseguramos diversión y calidad en su evento. <br>Azuri Producciones organiza bautizos, cumpleaños, baby shower, despedidas, matrimonios, entre muchos otros eventos. 
+<v-card-subtitle class="pt-2 text-center">
+  <router-link to="/fiestas-tematicas" >
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn></router-link>
 </v-card-subtitle>
 </v-card>
 </v-col>
@@ -101,8 +100,13 @@ max-width="344"
   Quinceañeros
 </v-card-title>
 
-<v-card-subtitle>
-  Los quince años es una edad importante para todas las mujeres, un quinceañero es una celebración para presentar a la quinceañera ante la sociedad, y demostrar que ha alcanzado madurez, Azuri Producciones se encarga de convertir tus quince en un evento único, daremos nuestro mejor esfuerzo para cumplir con sus expectativas.
+<v-card-subtitle class="text-center"> <router-link to="/quinceaneros" >
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn></router-link>
 </v-card-subtitle>
 
 
@@ -126,8 +130,13 @@ max-width="344"
   Cumpleaños
 </v-card-title>
 
-<v-card-subtitle>
-  ¿Próximo a cumplir años y deseas celebrarlo a lo grande? Tranqui, no te preocupes Azuri Producciones gracias a su larga trayectoria en el rubro de organización de eventos se encarga de volver tu cumpleaños en uno muy especial, sabemos que los cumpleaños es una celebración muy importante, es por eso que damos un servicio A1 para lograr un cumpleaños soñado.
+<v-card-subtitle class="text-center"><router-link to="/cumpleanos">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn></router-link>
 </v-card-subtitle>
 
 
@@ -141,7 +150,7 @@ max-width="344"
 <v-col >
 
 <v-card
-class="mx-auto"
+class="mx-auto text-center"
 max-width="344"
 >
 <v-img
@@ -149,14 +158,17 @@ src="../assets/home/fiestas-juveniles.jpg"
 height="200px"
 ></v-img>
 
-<v-card-title>
-  Fiestas Juveniles
+<v-card-title class="text-center">
+  <div class="text-center">Fiestas Juveniles</div>
 </v-card-title>
 
-<v-card-subtitle>
-  Azuri Producciones es experto en fiestas juveniles, siendo esta el área donde con más experiencia contamos. Realizamos todo tipo de fiestas juveniles.
-
-Realizamos Quince años, 18 años, Cumpleaños, Fiestas Temáticas, Fiestas de Promoción entre otros:
+<v-card-subtitle><router-link to="/fiestas-juveniles">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn></router-link>
 </v-card-subtitle>
 
 
@@ -183,8 +195,14 @@ height="200px"
 
 </v-card-title>
 
-<v-card-subtitle>
-  ¿No encuentras una descripción que encaje con el tipo de evento que buscas celebrar? No te preocupes, gracias a nuestra gran variedad y cantidad de proveedores podemos hacer el evento que deseas una realidad, no dudes en contactarnos!
+<v-card-subtitle class="text-center"><router-link to="/evento-privado">
+ 
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn></router-link>
 </v-card-subtitle>
 
 
@@ -204,18 +222,149 @@ height="200px"
 ></v-img>
 
 <v-card-title>
-  Evento Privado
+  Equipos de sonido y DJ
 
 </v-card-title>
 
-<v-card-subtitle>
-  ¿No encuentras una descripción que encaje con el tipo de evento que buscas celebrar? No te preocupes, gracias a nuestra gran variedad y cantidad de proveedores podemos hacer el evento que deseas una realidad, no dudes en contactarnos!
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
 </v-card-subtitle>
 
 
 
 </v-card>
 </v-col>
+
+
+
+<v-col>
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/eventos-privados.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Mobiliario
+
+</v-card-title>
+
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
+
+<v-col>
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/eventos-privados.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Casas para eventos
+
+</v-card-title>
+
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
+
+<v-col>
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/eventos-privados.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Animación
+
+</v-card-title>
+
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
+
+<v-col>
+
+<v-card
+class="mx-auto"
+max-width="344"
+>
+<v-img
+src="../assets/home/eventos-privados.jpg"
+height="200px"
+></v-img>
+
+<v-card-title>
+  Personal A1
+
+</v-card-title>
+
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
+</v-card-subtitle>
+
+
+
+</v-card>
+</v-col>
+
 
 
 
@@ -238,7 +387,7 @@ height="200px"
 
     <div>
     <v-footer 
-      v-bind="localAttrs"
+      v-bind="localAttrs" id="contactar"
       :padless="padless" class="footer"
     >
       <v-card
@@ -325,26 +474,29 @@ height="200px"
   
 </div>
 
-<div class="botones">
-  <div>
-</div>
-</div>
 
 
 </div>
+
+
+
 </template>
 
 
 <script>
-export default{
-name:'HelloWorld'
+export default {
+  data() {
+    return {
+      titleClass: 'home'
+    }
+  }
 }
 </script>
 
 
 <style scoped>
 .bg-overlay{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 11, 34)), url("../assets/home/image0.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 11, 34)), url("../assets/home/fiestas.jpg");
   background-position: center center;
   background-size: cover;
     display:flex;
@@ -363,11 +515,13 @@ padding-bottom:20%;
 }
 
 @media (max-width: 576px) { 
+ 
   .fondo{
   background-color: rgb(0, 11, 34);
   padding-top:20px !important;
   color:white;
 }
+
   .badge{
     display:none;
   }
@@ -381,6 +535,7 @@ padding-bottom:40%;
   .footer-col-3{
     padding-top:30px;
   }
+  
 }
 .titulo{
   margin:auto;
@@ -436,6 +591,9 @@ width: 100%;
   align-items: center;
 }
 @media (max-width: 576px) { 
+  .size-font-footer{
+ font-size:18px !important; 
+}
   .paral-o{
   height: 1300px !important;
 }
@@ -480,6 +638,7 @@ width: 100%;
 .paral{
   margin-top:-40px !important;
 }
+
 }
 .text-white{
   color:white !important;
@@ -530,6 +689,9 @@ padding-bottom:0px !important;
 }
 .margin-t{
   padding-top:55px;
+}
+a{
+text-decoration:none !important;
 }
 .imagesize{
   width:400px;
@@ -613,4 +775,8 @@ video {
   font-size:28px;
   font-weight: 500;
 }
+.v-card__title{
+  justify-content: center;
+}
+
 </style>

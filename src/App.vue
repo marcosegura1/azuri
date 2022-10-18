@@ -2,24 +2,24 @@
   <v-app>
  
      <v-toolbar app class='toolbar'>
-      <v-toolbar-title><v-img shaped class="rounded-lg size-img"
+      <v-toolbar-title><router-link to="/" ><v-img shaped class="rounded-lg size-img"
 lazy-src="./assets/home/logo.png"
 src="./assets/home/logo.png"
-></v-img>
+></v-img></router-link>
 </v-toolbar-title>
      <v-spacer></v-spacer>
  
       <div class="supra-container"> 
         <div>     
-         <a href="#" class="color-white" >
+          <router-link to="/" class="color-white">
           Inicio
-         </a>
+        </router-link>
  
-         <a href="#servios" class="color-white">
+        <a href="/#servicios" class="color-white" >
           Servicios
-         </a>
+        </a>
  
-         <a href="#contacto" class="color-white" >
+         <a href="#contactar" class="color-white" >
           Contacto
          </a>
         </div>
@@ -95,7 +95,9 @@ src="./assets/home/logo.png"
  </script>
  
  <style scoped>
-
+ a{
+text-decoration:none !important;
+}
  .toolbar{
    position: fixed !important;
    width:100%;
@@ -142,6 +144,10 @@ padding-right:12px;
   font-size:20px;
 }
 @media (max-width: 576px) {
+.socials{
+  display: none;
+}
+
 .supra-container div{
   display:flex !important;
  width: 100% !important;
