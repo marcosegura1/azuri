@@ -1,22 +1,8 @@
 <template>
   <div>
-  <div class="bg-overlay">
-
- <div class="titulo">
-
-<div>Azuri Producciones</div>
-<div class="sub-title">Todo para tu evento en un solo lugar</div>
-<v-btn
-          class="boton btn-custom"
-          @click="messages++"
-        >
-          Saber más
-        </v-btn>
-      </div>  
-  </div>
+ 
 
 
-<div ></div>
 
 <div class="fondo about">
   <v-container class="delimitar">
@@ -61,24 +47,26 @@ src="../assets/home/image1.jpg"
 class="mx-auto"
 max-width="344"
 >
-<v-img 
+<v-img class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
   src="../assets/home/fiestas.jpg"
   height="200px"
-></v-img>
-
-<v-card-title>
+><v-card-title class="display-block text-center">
   Fiestas Temáticas
-</v-card-title>
+<h6> 
+    Fiestas Temáticas
+</h6>
+</v-card-title> 
 
 <v-card-subtitle class="pt-2 text-center">
-  <router-link to="/fiestas-tematicas" >
-  <v-btn
+<router-link  to="/quinceaneros/"><v-btn
           class="boton btn-custom my-4"
           @click="messages++"
         >
           Saber más
         </v-btn></router-link>
-</v-card-subtitle>
+</v-card-subtitle></v-img>
+
+
 </v-card>
 </v-col>
 
@@ -91,16 +79,18 @@ max-width="344"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
   src="../assets/home/quinceañeros.jpg"
   height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Quinceañeros
+  <h6> 
+    Quinceañeros
+</h6>
 </v-card-title>
 
-<v-card-subtitle class="text-center"> <router-link to="/quinceaneros" >
+<v-card-subtitle class="text-center"> <router-link to="/quinceaneros/" >
   <v-btn
           class="boton btn-custom my-4"
           @click="messages++"
@@ -108,6 +98,7 @@ max-width="344"
           Saber más
         </v-btn></router-link>
 </v-card-subtitle>
+</v-img>
 
 
 
@@ -121,16 +112,18 @@ max-width="344"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
   src="../assets/home/cumpleaños.jpg"
   height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Cumpleaños
+  <h6> 
+    Cumpleaños
+</h6>
 </v-card-title>
 
-<v-card-subtitle class="text-center"><router-link to="/cumpleanos">
+<v-card-subtitle class="text-center"><router-link to="/cumpleanos#inicio">
   <v-btn
           class="boton btn-custom my-4"
           @click="messages++"
@@ -140,6 +133,7 @@ max-width="344"
 </v-card-subtitle>
 
 
+</v-img>
 
 </v-card>
 </v-col>
@@ -153,13 +147,15 @@ max-width="344"
 class="mx-auto text-center"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/fiestas-juveniles.jpg"
 height="200px"
-></v-img>
-
-<v-card-title class="text-center">
-  <div class="text-center">Fiestas Juveniles</div>
+>
+<v-card-title class="display-block text-center">
+Fiestas Juveniles
+<h6> 
+    Fiestas Juveniles
+</h6>
 </v-card-title>
 
 <v-card-subtitle><router-link to="/fiestas-juveniles">
@@ -170,6 +166,7 @@ height="200px"
           Saber más
         </v-btn></router-link>
 </v-card-subtitle>
+</v-img>
 
 
 
@@ -185,17 +182,18 @@ height="200px"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/eventos-privados.jpg"
 height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Evento Privado
-
+  <h6>
+    Evento Privado
+  </h6>
 </v-card-title>
 
-<v-card-subtitle class="text-center"><router-link to="/evento-privado">
+<v-card-subtitle class="text-center"><router-link to="/evento-privado#inicio">
  
   <v-btn
           class="boton btn-custom my-4"
@@ -205,6 +203,7 @@ height="200px"
         </v-btn></router-link>
 </v-card-subtitle>
 
+</v-img>
 
 
 </v-card>
@@ -216,14 +215,15 @@ height="200px"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/eventos-privados.jpg"
 height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Equipos de sonido y DJ
-
+<h6> 
+  Equipos de sonido y DJ
+</h6>
 </v-card-title>
 
 <v-card-subtitle class="text-center">
@@ -234,6 +234,7 @@ height="200px"
           Saber más
         </v-btn>
 </v-card-subtitle>
+</v-img>
 
 
 
@@ -248,14 +249,15 @@ height="200px"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/eventos-privados.jpg"
 height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Mobiliario
-
+  <h6>
+    Mobiliario
+  </h6>
 </v-card-title>
 
 <v-card-subtitle class="text-center">
@@ -266,6 +268,7 @@ height="200px"
           Saber más
         </v-btn>
 </v-card-subtitle>
+</v-img>
 
 
 
@@ -279,14 +282,15 @@ height="200px"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/eventos-privados.jpg"
 height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Casas para eventos
-
+<h6>
+  Casas para eventos
+</h6>
 </v-card-title>
 
 <v-card-subtitle class="text-center">
@@ -297,6 +301,7 @@ height="200px"
           Saber más
         </v-btn>
 </v-card-subtitle>
+</v-img>
 
 
 
@@ -310,14 +315,15 @@ height="200px"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/eventos-privados.jpg"
 height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Animación
-
+<h6>
+  Animación
+</h6>
 </v-card-title>
 
 <v-card-subtitle class="text-center">
@@ -327,7 +333,8 @@ height="200px"
         >
           Saber más
         </v-btn>
-</v-card-subtitle>
+</v-card-subtitle></v-img>
+
 
 
 
@@ -341,13 +348,15 @@ height="200px"
 class="mx-auto"
 max-width="344"
 >
-<v-img
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
 src="../assets/home/eventos-privados.jpg"
 height="200px"
-></v-img>
-
-<v-card-title>
+>
+<v-card-title class="display-block text-center">
   Personal A1
+<h6>
+  Personal A1   
+</h6>
 
 </v-card-title>
 
@@ -358,7 +367,8 @@ height="200px"
         >
           Saber más
         </v-btn>
-</v-card-subtitle>
+</v-card-subtitle></v-img>
+
 
 
 
@@ -374,105 +384,13 @@ height="200px"
 </div>
 
  
-<v-btn
-        fab
-        dark
-        mdall
-        class="whatsapp"
-      >
-      <i class="fa-brands fa-whatsapp"></i>
-      </v-btn>
+
+      
 
 
 
-    <div>
-    <v-footer 
-      v-bind="localAttrs" id="contactar"
-      :padless="padless" class="footer"
-    >
-      <v-card
-        flat
-        tile
-        class="fondo-footer"
-        width="100%"
-        
-      >
-        <v-card-text>
-         <v-container class="delimitar">
-          <v-row>
-            <v-col class="text-white subtitle">
-              ¡Contáctanos!
-              <v-form
-    ref="form"
-    v-model="valid"
-    lazy-validation
-  >
-    <v-text-field
-      v-model="name"
-      :counter="10"
-      :rules="nameRules"
-      label="Name"
-      required
-      color="white"
-      class="custom-label-color mt-6"
-    ></v-text-field>
+   
 
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-      color="white"
-      class="custom-placeholer-color"
-    ></v-text-field>
-
-
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="Message"
-      required  
-      color="white"
-      class="custom-label-color"
-    ></v-text-field>
-  
-
-    <v-btn
-      color="white"
-      class="mr-4 mt-5"
-      @click="reset"
-    >
-      Enviar
-    </v-btn>
-  </v-form>
-            </v-col>
-           
- <v-col cols="6" class="text-white text-center sub346" >
-  <v-img class="rounded-lg imagen-footer" gradient="rgba(0,0,0,.33), rgba(0,0,0,.7)"
-  src="../assets/home/image4.jpg"
-  height="300px"
-> <div class="size-font-footer text-white">Somos los mejores en lo que hacemos</div></v-img>
-
- 
-
-            </v-col>
-          </v-row>
-         </v-container>
-        </v-card-text>
-
-        <v-divider class="mt-5 white-divider"></v-divider>
-        <v-card-text class="white--text text-center mt-3 mb-3">
-          <div>Desarrollado por Marco Segura</div>
-        </v-card-text>
-      </v-card>
-    </v-footer>
-  </div>
-<div>
-
-
-
-  
-</div>
 
 
 
@@ -489,30 +407,13 @@ export default {
     return {
       titleClass: 'home'
     }
-  }
+    },
 }
 </script>
 
 
 <style scoped>
-.bg-overlay{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 11, 34)), url("../assets/home/fiestas.jpg");
-  background-position: center center;
-  background-size: cover;
-    display:flex;
-  justify-content:center;
-    width:100%;
-    align-content:center;
-    align-items:center;
-    text-align:center;
-    position: relative;
-}
-@media (min-width: 576px) { 
-.bg-overlay{
-padding-top:20%;
-padding-bottom:20%;
-  }
-}
+
 
 @media (max-width: 576px) { 
  
@@ -528,21 +429,11 @@ padding-bottom:20%;
  .second-order{
     order:2;
  }
-  .bg-overlay{
-padding-top:40%;
-padding-bottom:40%;
-  }
-  .footer-col-3{
-    padding-top:30px;
-  }
+ 
+ 
   
 }
-.titulo{
-  margin:auto;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size:50px;
-  color:white;
-}
+
 .division{
   width:45%;
   height:4px;
@@ -591,9 +482,7 @@ width: 100%;
   align-items: center;
 }
 @media (max-width: 576px) { 
-  .size-font-footer{
- font-size:18px !important; 
-}
+
   .paral-o{
   height: 1300px !important;
 }
@@ -640,19 +529,8 @@ width: 100%;
 }
 
 }
-.text-white{
-  color:white !important;
-}
-.whatsapp{
-  position:fixed;
-  bottom:25px;
-  padding:28px;
-  font-size:27px;
-  left:25px;
-  z-index:99;
-  background-color: #25d366	 !important;
-}
-.footer{padding:0px;}
+
+
 
 .container-badge{
   display: flex;
@@ -681,9 +559,7 @@ bottom:40px;
 display: flex;
 justify-content: center;;
 }
-.delimitar{
-  max-width:1200px;
-}
+
 .margin-b-0{
 padding-bottom:0px !important;
 }
@@ -707,14 +583,8 @@ video {
   bottom: 0;
   z-index: 1;
 }
-.fondo-footer{
-  background-color:rgb(0, 11, 34);
-  padding-top:30px !important;
-}
-.subtitle{
-  font-size:20px;
-  font-weight: 600;
-}
+
+
 .width-equal{
   width:140px;
 }
@@ -739,11 +609,7 @@ video {
 .sub346{
   line-height: 25px !important;
 }
-.sub-title{
-  font-size:18px;
-  margin-top:5px;
-  margin-bottom:5px;
-}
+
 
 .font-size{
   font-size:40px;
@@ -766,17 +632,19 @@ video {
 .servicios{
   padding-bottom:40px;
 }
-.imagen-footer{
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-.size-font-footer{
-  font-size:28px;
-  font-weight: 500;
-}
+
+
 .v-card__title{
   justify-content: center;
+}
+.contenedor-imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white
+}
+.display-block{
+  display:block !important;
 }
 
 </style>

@@ -40,6 +40,7 @@ const routes = [
     name: 'QuinCeaneros',
     component: QuinCeaneros
   },
+  
 ]
 
 const router = new VueRouter({

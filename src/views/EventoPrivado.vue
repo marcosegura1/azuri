@@ -1,31 +1,5 @@
 <template>
   <div>
-  <div class="bg-overlay">
-
- <div class="titulo">
-
-<div>Azuri Producciones</div>
-<div class="sub-title">Todo para tu evento en un solo lugar</div><a href="#contactar">
-<v-btn
-          class="boton btn-custom"
-          @click="messages++"
-        >
-          Contactar
-        </v-btn></a>
-      </div>  
-  </div>
-  <v-btn
-        fab
-        dark
-        mdall
-        class="whatsapp"
-      >
-      <i class="fa-brands fa-whatsapp"></i>
-      </v-btn>
-
-
-
-
 
       <div class="fondo about">
   <v-container class="delimitar">
@@ -37,7 +11,7 @@
 <div class="container-badge ">
 
 </div>
-<div class="subtitulo font-weight-black display-2 text-center">Evento Privado
+<div class="subtitulo font-weight-black display-2 text-center" >Evento Privado
 </div>
 <div class="w-100 content-2">
 <div class="division2 mb-6 mt-5"></div></div>
@@ -54,89 +28,6 @@ src="../assets/home/eventos-privados.jpg"
 
 
 
-
-<div>
-    <v-footer 
-      v-bind="localAttrs" id="contactar"
-      :padless="padless" class="footer"
-    >
-      <v-card
-        flat
-        tile
-        class="fondo-footer"
-        width="100%"
-        
-      >
-        <v-card-text>
-         <v-container class="delimitar">
-          <v-row>
-            <v-col class="text-white subtitle">
-              ¡Contáctanos!
-              <v-form
-    ref="form"
-    v-model="valid"
-    lazy-validation
-  >
-    <v-text-field
-      v-model="name"
-      :counter="10"
-      :rules="nameRules"
-      label="Name"
-      required
-      color="white"
-      class="custom-label-color mt-6"
-    ></v-text-field>
-
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-      color="white"
-      class="custom-placeholer-color"
-    ></v-text-field>
-
-
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="Message"
-      required  
-      color="white"
-      class="custom-label-color"
-    ></v-text-field>
-  
-
-    <v-btn
-      color="white"
-      class="mr-4 mt-5"
-      @click="reset"
-    >
-      Enviar
-    </v-btn>
-  </v-form>
-            </v-col>
-           
- <v-col cols="6" class="text-white text-center sub346" >
-  <v-img class="rounded-lg imagen-footer" gradient="rgba(0,0,0,.33), rgba(0,0,0,.7)"
-  src="../assets/home/image4.jpg"
-  height="300px"
-> <div class="size-font-footer text-white">Somos los mejores en lo que hacemos</div></v-img>
-
- 
-
-            </v-col>
-          </v-row>
-         </v-container>
-        </v-card-text>
-
-        <v-divider class="mt-5 white-divider"></v-divider>
-        <v-card-text class="white--text text-center mt-3 mb-3">
-          <div>Desarrollado por Marco Segura</div>
-        </v-card-text>
-      </v-card>
-    </v-footer>
-  </div>
 
 
 
