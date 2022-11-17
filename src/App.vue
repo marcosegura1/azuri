@@ -216,7 +216,7 @@ $("#features").fadeIn()
  
  <style scoped>
  .bg-overlay{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 11, 34)), url("./assets/home/home.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 11, 34)), url("./assets/home/fondo.jpg");
   background-position: center center;
   background-size: cover;
     display:flex;
@@ -313,7 +313,7 @@ backdrop-filter: blur( 20px );
 }
  .supra-container{
   display: flex;
-font-size:14px !important;
+font-size:20px !important;
 padding-right:12px;
  }
  .supra-container .color-white{

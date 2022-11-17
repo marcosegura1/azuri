@@ -4,13 +4,13 @@
 
 
 
-<div class="fondo about">
-  <v-container class="delimitar">
-<v-row>
+<div class="fondo about ">
+  <v-container class="delimitar ">
+<v-row class="delimitacion">
 <v-col class="imagen imagesize second-order">
 <v-img shaped class="rounded-lg imagen-o"
-lazy-src="../assets/home/image1.jpg"
-src="../assets/home/image1.jpg"
+lazy-src="../assets/home/nosotros.jpg"
+src="../assets/home/nosotros.jpg"
 ></v-img>
 </v-col>
 <v-col>
@@ -36,7 +36,7 @@ src="../assets/home/image1.jpg"
 
 
 <div class="fondo servicios" id="servicios">
-  <v-container class="delimitar">
+  <v-container class="delimitar delimitacion">
 <div class="subtitulo font-weight-black display-2 text-center mb-10">Servicios</div>
 
 <v-row >
@@ -216,7 +216,7 @@ class="mx-auto"
 max-width="344"
 >
 <v-img class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
-src="../assets/home/eventos-privados.jpg"
+src="../assets/home/sonido.jpg"
 height="200px"
 >
 <v-card-title class="display-block text-center">
@@ -250,7 +250,7 @@ class="mx-auto"
 max-width="344"
 >
 <v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
-src="../assets/home/eventos-privados.jpg"
+src="../assets/home/mobiliario.jpg"
 height="200px"
 >
 <v-card-title class="display-block text-center">
@@ -283,7 +283,7 @@ class="mx-auto"
 max-width="344"
 >
 <v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
-src="../assets/home/eventos-privados.jpg"
+src="../assets/home/casa-eventos.jpg"
 height="200px"
 >
 <v-card-title class="display-block text-center">
@@ -316,7 +316,7 @@ class="mx-auto"
 max-width="344"
 >
 <v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
-src="../assets/home/eventos-privados.jpg"
+src="../assets/home/animaciones-eventos.jpg"
 height="200px"
 >
 <v-card-title class="display-block text-center">
@@ -340,6 +340,41 @@ height="200px"
 
 </v-card>
 </v-col>
+
+
+<v-col class="superior-transparent">
+
+<v-card
+class="mx-auto transparent"
+max-width="344"
+>
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200">
+<v-card-title class="display-block text-center">
+  Bartenders
+<h6>
+  Bartenders
+</h6>
+
+</v-card-title>
+
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
+</v-card-subtitle></v-img>
+
+
+
+
+</v-card>
+</v-col>
+
+
 
 
 <v-col>
@@ -349,13 +384,46 @@ class="mx-auto"
 max-width="344"
 >
 <v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
-src="../assets/home/eventos-privados.jpg"
+src="../assets/home/bartenders.jpg"
 height="200px"
 >
 <v-card-title class="display-block text-center">
-  Personal A1
+  Bartenders
 <h6>
-  Personal A1   
+  bartenders
+</h6>
+
+</v-card-title>
+
+<v-card-subtitle class="text-center">
+  <v-btn
+          class="boton btn-custom my-4"
+          @click="messages++"
+        >
+          Saber más
+        </v-btn>
+</v-card-subtitle></v-img>
+
+
+
+
+</v-card>
+</v-col>
+
+
+<v-col class="superior-transparent">
+
+<v-card
+class="mx-auto transparent"
+max-width="344"
+>
+<v-img  class="contenedor-imagen" gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200">
+<v-card-title class="display-block text-center">
+  Bartenders
+<h6>
+  Bartenders
 </h6>
 
 </v-card-title>
@@ -377,10 +445,173 @@ height="200px"
 
 
 
-
 </v-row>
 
 </v-container>
+
+  <v-item-group mandatory class="margin-top-4">
+    <v-container>
+      <v-row>
+        <v-col
+        
+          cols="12"
+          md="2"
+        >
+          <v-item v-slot="{ active, toggle }">
+            <v-card
+              :color="active ? 'primary' : ''"
+              class="d-flex align-center"
+              dark
+              height="200"
+              @click="toggle"
+            >
+            <v-img class="tamaño-imagen" src="../assets/home/fondo.jpg">
+              <v-scroll-y-transition>
+                <v-img    v-if="active"
+                  class="text-h2 flex-grow-1 text-center size-font contenedor-imagen"  gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200"> </v-img>
+                
+              </v-scroll-y-transition>}
+            </v-img>
+            </v-card>
+          </v-item>
+        </v-col>
+
+        <v-col
+        
+        cols="12"
+        md="2"
+      >
+        <v-item v-slot="{ active, toggle }">
+          <v-card
+            :color="active ? 'primary' : ''"
+            class="d-flex align-center"
+            
+            height="200"
+            @click="toggle"
+          >
+          <v-img class="tamaño-imagen" src="../assets/home/eventos-privados.jpg">
+            <v-scroll-y-transition>
+              <v-img    v-if="active"
+                class="text-h2 flex-grow-1 text-center size-font contenedor-imagen"  gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200"> </v-img>
+              
+            </v-scroll-y-transition>
+          </v-img>
+          </v-card>
+        </v-item>
+      </v-col>
+
+      <v-col
+        
+        cols="12"
+        md="2"
+      >
+        <v-item v-slot="{ active, toggle }">
+          <v-card
+            :color="active ? 'primary' : ''"
+            class="d-flex align-center"
+           
+            height="200"
+            @click="toggle"
+          >
+          <v-img class="tamaño-imagen" src="../assets/home/casa-eventos.jpg">
+            <v-scroll-y-transition>
+              <v-img    v-if="active"
+                class="text-h2 flex-grow-1 text-center size-font contenedor-imagen"  gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200"> </v-img>
+              
+            </v-scroll-y-transition>
+          </v-img>
+          </v-card>
+        </v-item>
+      </v-col>
+
+      <v-col
+        
+        cols="12"
+        md="2"
+      >
+        <v-item v-slot="{ active, toggle }">
+          <v-card
+            :color="active ? 'primary' : ''"
+            class="d-flex align-center"
+            
+            height="200"
+            @click="toggle"
+          >
+          <v-img class="tamaño-imagen" src="../assets/home/cumpleaños.jpg">
+            <v-scroll-y-transition>
+              <v-img    v-if="active"
+                class="text-h2 flex-grow-1 text-center size-font contenedor-imagen"  gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200"> </v-img>
+              
+            </v-scroll-y-transition>
+            </v-img>
+          </v-card>
+        </v-item>
+      </v-col>
+
+
+      <v-col
+        
+        cols="12"
+        md="2"
+      >
+        <v-item v-slot="{ active, toggle }">
+          <v-card
+            :color="active ? 'primary' : ''"
+            class="d-flex align-center"
+  
+            height="200"
+            @click="toggle"
+          >
+          <v-img class="tamaño-imagen" src="../assets/home/fiestas.jpg">
+            <v-scroll-y-transition>
+              <v-img    v-if="active"
+                class="text-h2 flex-grow-1 text-center size-font contenedor-imagen"  gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200"> </v-img>
+              
+            </v-scroll-y-transition>
+            </v-img> 
+          </v-card>
+        </v-item>
+      </v-col>
+
+
+      <v-col
+        
+        cols="12"
+        md="2"
+      >
+        <v-item v-slot="{ active, toggle }">
+          <v-card
+            :color="active ? 'primary' : ''"
+            class="d-flex align-center"
+            
+            height="200"
+            @click="toggle"
+          >
+          <v-img class="tamaño-imagen" src="../assets/home/fiestas-juveniles.jpg">
+            <v-scroll-y-transition>
+              <v-img    v-if="active"
+                class="text-h2 flex-grow-1 text-center size-font contenedor-imagen"  gradient="to top right, rgba(0,0,0,.4), rgba(0,0,0,.4)"
+src="../assets/home/bartenders.jpg"
+height="200"> </v-img>
+              
+            </v-scroll-y-transition>
+            </v-img>
+          </v-card>
+        </v-item>
+      </v-col>
+      </v-row>
+    </v-container>
+  </v-item-group>
 </div>
 
  
@@ -390,7 +621,6 @@ height="200px"
 
 
    
-
 
 
 
@@ -523,11 +753,15 @@ width: 100%;
   display: flex;
   justify-content: center !important;
 }
-
+.margin-top-4{
+  margin-top:10px !important;
+}
 .paral{
   margin-top:-40px !important;
 }
-
+.superior-transparent{
+ display:none;
+}
 }
 
 
@@ -540,7 +774,10 @@ width: 100%;
   display: flex;
   justify-content: flex-start;
 }
-
+.tamaño-imagen{
+  width: 100%;
+  height: 100%;
+}
 .socials{
   transform: rotate(90deg);
   position: fixed;
@@ -576,7 +813,9 @@ text-decoration:none !important;
   width: 100%;
   min-height: 500px;
 }
-
+.size-font{
+  font-size:30px !important
+}
 video {
   position: absolute;
   right: 0;
@@ -619,7 +858,9 @@ video {
 .paral-o{
   height: 1100px !important;
 }
-
+.transparent{
+  opacity: 0;
+}
 .paral{
   height: 1100px !important;
 }
@@ -646,5 +887,10 @@ video {
 .display-block{
   display:block !important;
 }
-
+.delimitacion{
+  max-width:1200px !important;
+}
+.margin-top-4{
+  margin-top:50px;
+}
 </style>
